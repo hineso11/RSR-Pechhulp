@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A778CD6421F09C8300E05A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD6321F09C8300E05A4F /* AppDelegate.swift */; };
+		A778CD6621F09C8300E05A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD6521F09C8300E05A4F /* ViewController.swift */; };
+		A778CD6921F09C8300E05A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778CD6721F09C8300E05A4F /* Main.storyboard */; };
+		A778CD6C21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A778CD6A21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld */; };
+		A778CD6E21F09C8400E05A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A778CD6D21F09C8400E05A4F /* Assets.xcassets */; };
+		A778CD7121F09C8400E05A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778CD6F21F09C8400E05A4F /* LaunchScreen.storyboard */; };
+		A778CD7C21F09C8400E05A4F /* RSR_PechhulpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD7B21F09C8400E05A4F /* RSR_PechhulpTests.swift */; };
+		A778CD8721F09C8400E05A4F /* RSR_PechhulpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD8621F09C8400E05A4F /* RSR_PechhulpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A778CD7821F09C8400E05A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A778CD5821F09C8300E05A4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A778CD5F21F09C8300E05A4F;
+			remoteInfo = "RSR Pechhulp";
+		};
+		A778CD8321F09C8400E05A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A778CD5821F09C8300E05A4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A778CD5F21F09C8300E05A4F;
+			remoteInfo = "RSR Pechhulp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A778CD6021F09C8300E05A4F /* RSR Pechhulp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSR Pechhulp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A778CD6321F09C8300E05A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A778CD6521F09C8300E05A4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A778CD6821F09C8300E05A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A778CD6B21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSR_Pechhulp.xcdatamodel; sourceTree = "<group>"; };
+		A778CD6D21F09C8400E05A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A778CD7021F09C8400E05A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A778CD7221F09C8400E05A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A778CD7721F09C8400E05A4F /* RSR PechhulpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSR PechhulpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A778CD7B21F09C8400E05A4F /* RSR_PechhulpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSR_PechhulpTests.swift; sourceTree = "<group>"; };
+		A778CD7D21F09C8400E05A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A778CD8221F09C8400E05A4F /* RSR PechhulpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSR PechhulpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A778CD8621F09C8400E05A4F /* RSR_PechhulpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSR_PechhulpUITests.swift; sourceTree = "<group>"; };
+		A778CD8821F09C8600E05A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A778CD5D21F09C8300E05A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A778CD7421F09C8400E05A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A778CD7F21F09C8400E05A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A778CD5721F09C8300E05A4F = {
+			isa = PBXGroup;
+			children = (
+				A778CD6221F09C8300E05A4F /* RSR Pechhulp */,
+				A778CD7A21F09C8400E05A4F /* RSR PechhulpTests */,
+				A778CD8521F09C8400E05A4F /* RSR PechhulpUITests */,
+				A778CD6121F09C8300E05A4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A778CD6121F09C8300E05A4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A778CD6021F09C8300E05A4F /* RSR Pechhulp.app */,
+				A778CD7721F09C8400E05A4F /* RSR PechhulpTests.xctest */,
+				A778CD8221F09C8400E05A4F /* RSR PechhulpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A778CD6221F09C8300E05A4F /* RSR Pechhulp */ = {
+			isa = PBXGroup;
+			children = (
+				A778CD6321F09C8300E05A4F /* AppDelegate.swift */,
+				A778CD6521F09C8300E05A4F /* ViewController.swift */,
+				A778CD6721F09C8300E05A4F /* Main.storyboard */,
+				A778CD6D21F09C8400E05A4F /* Assets.xcassets */,
+				A778CD6F21F09C8400E05A4F /* LaunchScreen.storyboard */,
+				A778CD7221F09C8400E05A4F /* Info.plist */,
+				A778CD6A21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld */,
+			);
+			path = "RSR Pechhulp";
+			sourceTree = "<group>";
+		};
+		A778CD7A21F09C8400E05A4F /* RSR PechhulpTests */ = {
+			isa = PBXGroup;
+			children = (
+				A778CD7B21F09C8400E05A4F /* RSR_PechhulpTests.swift */,
+				A778CD7D21F09C8400E05A4F /* Info.plist */,
+			);
+			path = "RSR PechhulpTests";
+			sourceTree = "<group>";
+		};
+		A778CD8521F09C8400E05A4F /* RSR PechhulpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A778CD8621F09C8400E05A4F /* RSR_PechhulpUITests.swift */,
+				A778CD8821F09C8600E05A4F /* Info.plist */,
+			);
+			path = "RSR PechhulpUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A778CD5F21F09C8300E05A4F /* RSR Pechhulp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A778CD8B21F09C8600E05A4F /* Build configuration list for PBXNativeTarget "RSR Pechhulp" */;
+			buildPhases = (
+				A778CD5C21F09C8300E05A4F /* Sources */,
+				A778CD5D21F09C8300E05A4F /* Frameworks */,
+				A778CD5E21F09C8300E05A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSR Pechhulp";
+			productName = "RSR Pechhulp";
+			productReference = A778CD6021F09C8300E05A4F /* RSR Pechhulp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A778CD7621F09C8400E05A4F /* RSR PechhulpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A778CD8E21F09C8600E05A4F /* Build configuration list for PBXNativeTarget "RSR PechhulpTests" */;
+			buildPhases = (
+				A778CD7321F09C8400E05A4F /* Sources */,
+				A778CD7421F09C8400E05A4F /* Frameworks */,
+				A778CD7521F09C8400E05A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A778CD7921F09C8400E05A4F /* PBXTargetDependency */,
+			);
+			name = "RSR PechhulpTests";
+			productName = "RSR PechhulpTests";
+			productReference = A778CD7721F09C8400E05A4F /* RSR PechhulpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A778CD8121F09C8400E05A4F /* RSR PechhulpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A778CD9121F09C8600E05A4F /* Build configuration list for PBXNativeTarget "RSR PechhulpUITests" */;
+			buildPhases = (
+				A778CD7E21F09C8400E05A4F /* Sources */,
+				A778CD7F21F09C8400E05A4F /* Frameworks */,
+				A778CD8021F09C8400E05A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A778CD8421F09C8400E05A4F /* PBXTargetDependency */,
+			);
+			name = "RSR PechhulpUITests";
+			productName = "RSR PechhulpUITests";
+			productReference = A778CD8221F09C8400E05A4F /* RSR PechhulpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A778CD5821F09C8300E05A4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Oliver Hines Apps";
+				TargetAttributes = {
+					A778CD5F21F09C8300E05A4F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A778CD7621F09C8400E05A4F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A778CD5F21F09C8300E05A4F;
+					};
+					A778CD8121F09C8400E05A4F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A778CD5F21F09C8300E05A4F;
+					};
+				};
+			};
+			buildConfigurationList = A778CD5B21F09C8300E05A4F /* Build configuration list for PBXProject "RSR Pechhulp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A778CD5721F09C8300E05A4F;
+			productRefGroup = A778CD6121F09C8300E05A4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A778CD5F21F09C8300E05A4F /* RSR Pechhulp */,
+				A778CD7621F09C8400E05A4F /* RSR PechhulpTests */,
+				A778CD8121F09C8400E05A4F /* RSR PechhulpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A778CD5E21F09C8300E05A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778CD7121F09C8400E05A4F /* LaunchScreen.storyboard in Resources */,
+				A778CD6E21F09C8400E05A4F /* Assets.xcassets in Resources */,
+				A778CD6921F09C8300E05A4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A778CD7521F09C8400E05A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A778CD8021F09C8400E05A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A778CD5C21F09C8300E05A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778CD6621F09C8300E05A4F /* ViewController.swift in Sources */,
+				A778CD6C21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld in Sources */,
+				A778CD6421F09C8300E05A4F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A778CD7321F09C8400E05A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778CD7C21F09C8400E05A4F /* RSR_PechhulpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A778CD7E21F09C8400E05A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778CD8721F09C8400E05A4F /* RSR_PechhulpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A778CD7921F09C8400E05A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A778CD5F21F09C8300E05A4F /* RSR Pechhulp */;
+			targetProxy = A778CD7821F09C8400E05A4F /* PBXContainerItemProxy */;
+		};
+		A778CD8421F09C8400E05A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A778CD5F21F09C8300E05A4F /* RSR Pechhulp */;
+			targetProxy = A778CD8321F09C8400E05A4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A778CD6721F09C8300E05A4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A778CD6821F09C8300E05A4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A778CD6F21F09C8400E05A4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A778CD7021F09C8400E05A4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A778CD8921F09C8600E05A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A778CD8A21F09C8600E05A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A778CD8C21F09C8600E05A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4393GT4D4K;
+				INFOPLIST_FILE = "RSR Pechhulp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliverhines.RSR-Pechhulp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A778CD8D21F09C8600E05A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4393GT4D4K;
+				INFOPLIST_FILE = "RSR Pechhulp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliverhines.RSR-Pechhulp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A778CD8F21F09C8600E05A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4393GT4D4K;
+				INFOPLIST_FILE = "RSR PechhulpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliverhines.RSR-PechhulpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSR Pechhulp.app/RSR Pechhulp";
+			};
+			name = Debug;
+		};
+		A778CD9021F09C8600E05A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4393GT4D4K;
+				INFOPLIST_FILE = "RSR PechhulpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliverhines.RSR-PechhulpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSR Pechhulp.app/RSR Pechhulp";
+			};
+			name = Release;
+		};
+		A778CD9221F09C8600E05A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4393GT4D4K;
+				INFOPLIST_FILE = "RSR PechhulpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliverhines.RSR-PechhulpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RSR Pechhulp";
+			};
+			name = Debug;
+		};
+		A778CD9321F09C8600E05A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4393GT4D4K;
+				INFOPLIST_FILE = "RSR PechhulpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliverhines.RSR-PechhulpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RSR Pechhulp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A778CD5B21F09C8300E05A4F /* Build configuration list for PBXProject "RSR Pechhulp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A778CD8921F09C8600E05A4F /* Debug */,
+				A778CD8A21F09C8600E05A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A778CD8B21F09C8600E05A4F /* Build configuration list for PBXNativeTarget "RSR Pechhulp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A778CD8C21F09C8600E05A4F /* Debug */,
+				A778CD8D21F09C8600E05A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A778CD8E21F09C8600E05A4F /* Build configuration list for PBXNativeTarget "RSR PechhulpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A778CD8F21F09C8600E05A4F /* Debug */,
+				A778CD9021F09C8600E05A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A778CD9121F09C8600E05A4F /* Build configuration list for PBXNativeTarget "RSR PechhulpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A778CD9221F09C8600E05A4F /* Debug */,
+				A778CD9321F09C8600E05A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A778CD6A21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A778CD6B21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodel */,
+			);
+			currentVersion = A778CD6B21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodel */;
+			path = RSR_Pechhulp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A778CD5821F09C8300E05A4F /* Project object */;
+}
