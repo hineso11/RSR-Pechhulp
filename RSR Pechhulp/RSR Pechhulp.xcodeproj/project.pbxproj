@@ -15,6 +15,7 @@
 		A778CD7C21F09C8400E05A4F /* RSR_PechhulpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD7B21F09C8400E05A4F /* RSR_PechhulpTests.swift */; };
 		A778CD8721F09C8400E05A4F /* RSR_PechhulpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD8621F09C8400E05A4F /* RSR_PechhulpUITests.swift */; };
 		A778CD9521F10CDB00E05A4F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD9421F10CDB00E05A4F /* MenuViewController.swift */; };
+		A79115C221F4ACBB0016A39F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79115C121F4ACBB0016A39F /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A778CD8621F09C8400E05A4F /* RSR_PechhulpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSR_PechhulpUITests.swift; sourceTree = "<group>"; };
 		A778CD8821F09C8600E05A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A778CD9421F10CDB00E05A4F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A79115C121F4ACBB0016A39F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				A778CD6F21F09C8400E05A4F /* LaunchScreen.storyboard */,
 				A778CD7221F09C8400E05A4F /* Info.plist */,
 				A778CD6A21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld */,
+				A79115C121F4ACBB0016A39F /* MapViewController.swift */,
 			);
 			path = "RSR Pechhulp";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				A778CD6C21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld in Sources */,
 				A778CD9521F10CDB00E05A4F /* MenuViewController.swift in Sources */,
 				A778CD6421F09C8300E05A4F /* AppDelegate.swift in Sources */,
+				A79115C221F4ACBB0016A39F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

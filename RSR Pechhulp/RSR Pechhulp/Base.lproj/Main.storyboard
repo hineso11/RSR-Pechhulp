@@ -73,9 +73,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="informationButton" destination="F0T-aR-VHu" id="oeG-DT-0DP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9H-Nc-yV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +92,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Say-dS-swU">
                                 <rect key="frame" x="0.0" y="216" width="375" height="387"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enicccm ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enicccm ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -120,7 +117,7 @@
         <!--RSR Pechhulp-->
         <scene sceneID="tyu-RO-Gvu">
             <objects>
-                <viewController title="RSR Pechhulp" id="A09-fp-DBr" sceneMemberID="viewController">
+                <viewController title="RSR Pechhulp" id="A09-fp-DBr" customClass="MapViewController" customModule="RSR_Pechhulp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPm-bf-1nq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +139,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="G6A-sY-x3Y" secondAttribute="trailing" constant="-20" id="Oye-8l-H2z"/>
                             <constraint firstAttribute="bottom" secondItem="hZJ-W4-Gef" secondAttribute="bottom" multiplier="1.1" id="YWL-nH-eAe"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lq9-jA-pIP"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="G6A-sY-x3Y" id="hYg-eS-LCI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FaC-7I-QhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

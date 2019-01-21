@@ -9,15 +9,11 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
-    // MARK: Properties
-    @IBOutlet weak var informationButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //let informationImage = UIImage(named: "InformationImage")?.withRenderingMode(.alwaysOriginal)
-        //informationButton.image = informationImage
+        
     }
 
-}Ω
+}
