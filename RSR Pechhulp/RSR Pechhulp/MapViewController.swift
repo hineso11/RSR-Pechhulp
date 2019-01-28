@@ -17,6 +17,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     // MARK: Variables and Constants
     let locationManager = CLLocationManager()
+    var userLocationAnnotation: MKAnnotation?
+    var locationInformationAnnotation: LocationInformationAnnotation?
+    var currentLocation: CLLocation?
     
     // MARK: ViewController functions
     override func viewDidLoad() {
@@ -86,14 +89,24 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        // Get the current location of the user
-        let currentLocation = locations.last!
-        // Create, set view region based on the user's current location
-        let viewRegion = MKCoordinateRegion(center: currentLocation.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
-        mapView.setRegion(viewRegion, animated: true)
+        // If this is first time user location has been found, then zoom to it
+        if (currentLocation == nil) {
+            // Get the current location of the user
+            currentLocation = locations.last!
+            // Create, set view region based on the user's current location
+            let viewRegion = MKCoordinateRegion(center: currentLocation!.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
+            mapView.setRegion(viewRegion, animated: true)
+            // Show user location pin on the map
+            mapView.showsUserLocation = true
+        } else {
+            currentLocation = locations.last!
+        }
         
-        mapView.showsUserLocation = true
-        
+        // If the location information annotation is set up, then update its location
+        if (locationInformationAnnotation != nil) {
+            
+            locationInformationAnnotation?.coordinate = (userLocationAnnotation?.coordinate)!
+        }
     }
     
     // MARK: MapKit functions
@@ -102,11 +115,31 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         if annotation is MKUserLocation {
             
-            let pin = mapView.view(for: annotation) ?? MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
-            pin.image = UIImage(named: "MapMarker")
-            return pin
+            // If this is the first time function has been called, save user location annotation
+            if userLocationAnnotation == nil {
+                userLocationAnnotation = annotation
+                
+                // Set up information annotation for user's location
+                locationInformationAnnotation = LocationInformationAnnotation(coordinate: annotation.coordinate)
+                mapView.addAnnotation(locationInformationAnnotation!)
+                
+            }
             
+            // Find the user location pin
+            let userLocationPin = mapView.view(for: annotation) ?? MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+            // Set custom image for pin
+            userLocationPin.image = UIImage(named: "MapMarker")
+            
+            return userLocationPin
+        } else {
+            // Create the location information annotation view
+            let locationInforamtionPin = LocationInformationAnnotationView(annotation: annotation, reuseIdentifier: nil)
+            // Save the annotation object
+            locationInformationAnnotation = annotation as! LocationInformationAnnotation
+            
+            return locationInforamtionPin
         }
-        return nil
     }
+    
+    
 }
