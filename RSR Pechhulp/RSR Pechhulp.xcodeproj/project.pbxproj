@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A73F2AAC21FE2EBB00B4CA00 /* LocationInformationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F2AAB21FE2EBB00B4CA00 /* LocationInformationAnnotation.swift */; };
 		A778CD6421F09C8300E05A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD6321F09C8300E05A4F /* AppDelegate.swift */; };
 		A778CD6921F09C8300E05A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778CD6721F09C8300E05A4F /* Main.storyboard */; };
 		A778CD6C21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A778CD6A21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld */; };
@@ -19,7 +18,6 @@
 		A79115C221F4ACBB0016A39F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79115C121F4ACBB0016A39F /* MapViewController.swift */; };
 		A7CDB1C721FE35D900C9300F /* LocationInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CDB1C621FE35D900C9300F /* LocationInformationView.xib */; };
 		A7CDB1C921FE361E00C9300F /* LocationInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDB1C821FE361E00C9300F /* LocationInformationView.swift */; };
-		A7F699C321FF3EF300B5FDAD /* LocationInformationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F699C221FF3EF300B5FDAD /* LocationInformationAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A73F2AAB21FE2EBB00B4CA00 /* LocationInformationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationAnnotation.swift; sourceTree = "<group>"; };
 		A778CD6021F09C8300E05A4F /* RSR Pechhulp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSR Pechhulp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A778CD6321F09C8300E05A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A778CD6821F09C8300E05A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		A79115C121F4ACBB0016A39F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A7CDB1C621FE35D900C9300F /* LocationInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationInformationView.xib; sourceTree = "<group>"; };
 		A7CDB1C821FE361E00C9300F /* LocationInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationView.swift; sourceTree = "<group>"; };
-		A7F699C221FF3EF300B5FDAD /* LocationInformationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +113,8 @@
 				A778CD7221F09C8400E05A4F /* Info.plist */,
 				A778CD6A21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld */,
 				A79115C121F4ACBB0016A39F /* MapViewController.swift */,
-				A73F2AAB21FE2EBB00B4CA00 /* LocationInformationAnnotation.swift */,
 				A7CDB1C621FE35D900C9300F /* LocationInformationView.xib */,
 				A7CDB1C821FE361E00C9300F /* LocationInformationView.swift */,
-				A7F699C221FF3EF300B5FDAD /* LocationInformationAnnotationView.swift */,
 			);
 			path = "RSR Pechhulp";
 			sourceTree = "<group>";
@@ -276,12 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A778CD6C21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld in Sources */,
-				A73F2AAC21FE2EBB00B4CA00 /* LocationInformationAnnotation.swift in Sources */,
 				A7CDB1C921FE361E00C9300F /* LocationInformationView.swift in Sources */,
 				A778CD9521F10CDB00E05A4F /* MenuViewController.swift in Sources */,
 				A778CD6421F09C8300E05A4F /* AppDelegate.swift in Sources */,
 				A79115C221F4ACBB0016A39F /* MapViewController.swift in Sources */,
-				A7F699C321FF3EF300B5FDAD /* LocationInformationAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

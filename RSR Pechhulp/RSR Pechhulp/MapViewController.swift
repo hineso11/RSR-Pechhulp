@@ -18,8 +18,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     // MARK: Variables and Constants
     let locationManager = CLLocationManager()
     var userLocationAnnotation: MKAnnotation?
-    var locationInformationAnnotation: LocationInformationAnnotation?
     var currentLocation: CLLocation?
+    var locationInformationView: LocationInformationView?
     
     // MARK: ViewController functions
     override func viewDidLoad() {
@@ -102,10 +102,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             currentLocation = locations.last!
         }
         
-        // If the location information annotation is set up, then update its location
-        if (locationInformationAnnotation != nil) {
-            
-            locationInformationAnnotation?.coordinate = (userLocationAnnotation?.coordinate)!
+        // If the custom location information view has been set up
+        if (locationInformationView != nil) {
+            // Update the location information
+            locationInformationView?.updateLocationInformation(location: currentLocation!)
         }
     }
     
@@ -116,29 +116,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         if annotation is MKUserLocation {
             
             // If this is the first time function has been called, save user location annotation
-            if userLocationAnnotation == nil {
-                userLocationAnnotation = annotation
-                
-                // Set up information annotation for user's location
-                locationInformationAnnotation = LocationInformationAnnotation(coordinate: annotation.coordinate)
-                mapView.addAnnotation(locationInformationAnnotation!)
-                
-            }
-            
+            userLocationAnnotation = annotation
             // Find the user location pin
             let userLocationPin = mapView.view(for: annotation) ?? MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
-            // Set custom image for pin
-            userLocationPin.image = UIImage(named: "MapMarker")
+            // Add the custom view to show location information on
+            locationInformationView = LocationInformationView(frame: CGRect(x: 0, y: 0, width: 240, height: 200))
+            userLocationPin.addSubview(locationInformationView!)
             
             return userLocationPin
-        } else {
-            // Create the location information annotation view
-            let locationInforamtionPin = LocationInformationAnnotationView(annotation: annotation, reuseIdentifier: nil)
-            // Save the annotation object
-            locationInformationAnnotation = annotation as! LocationInformationAnnotation
-            
-            return locationInforamtionPin
         }
+        return nil
     }
     
     
