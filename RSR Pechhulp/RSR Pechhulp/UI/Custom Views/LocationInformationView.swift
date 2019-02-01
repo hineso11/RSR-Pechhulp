@@ -21,39 +21,48 @@ class LocationInformationView: UIView {
     // MARK: Constructors
     override init(frame: CGRect) {
         super.init(frame: frame)
-        commonInit()
+        setupCustomView()
     }
     
     required init(coder: NSCoder) {
         super.init(coder: coder)!
-        commonInit()
+        setupCustomView()
     }
 
-    func commonInit () {
+    // MARK: Custom functions
+    
+    // Function to setup the view from the nib file and reposition accordingly
+    func setupCustomView () {
         
+        // Load view from nib
         Bundle.main.loadNibNamed("LocationInformationView", owner: self, options: nil)
         addSubview(contentView)
+        
+        // Adjust frame and resizing
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
-        //frame = CGRect(x: 0, y: 0, width: 240, height: 280)
+        // Adjust position of view so it is above current location
         frame.origin.x -= (frame.width) / 2.0
         frame.origin.y -= (frame.height)
     }
     
+    // Function to update the information displayed based on a new location
     func updateLocationInformation (location: CLLocation) {
         
+        // Perform reverse lookup on location to obtain information
         geocoder.reverseGeocodeLocation(location, completionHandler: {
             (placemarks, error) in
             
             if error == nil {
-                
+                // Extract information from first placemark and pass to function
                 let placemark = placemarks?.first
                 self.updateInformationLabel(streetNumber: (placemark?.subThoroughfare)!, street: (placemark?.thoroughfare)!, city: (placemark?.locality)!, postcode: (placemark?.postalCode)!)
             }
         })
     }
     
+    // Function to update the UI with new location
     private func updateInformationLabel (streetNumber: String, street: String, city: String, postcode: String) {
         
         let addressString = streetNumber + " " + street + ",\n" + city + ",\n" + postcode

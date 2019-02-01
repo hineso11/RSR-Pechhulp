@@ -14,7 +14,6 @@
 		A778CD7121F09C8400E05A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778CD6F21F09C8400E05A4F /* LaunchScreen.storyboard */; };
 		A778CD7C21F09C8400E05A4F /* RSR_PechhulpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD7B21F09C8400E05A4F /* RSR_PechhulpTests.swift */; };
 		A778CD8721F09C8400E05A4F /* RSR_PechhulpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD8621F09C8400E05A4F /* RSR_PechhulpUITests.swift */; };
-		A778CD9521F10CDB00E05A4F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778CD9421F10CDB00E05A4F /* MenuViewController.swift */; };
 		A79115C221F4ACBB0016A39F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79115C121F4ACBB0016A39F /* MapViewController.swift */; };
 		A7CDB1C721FE35D900C9300F /* LocationInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CDB1C621FE35D900C9300F /* LocationInformationView.xib */; };
 		A7CDB1C921FE361E00C9300F /* LocationInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDB1C821FE361E00C9300F /* LocationInformationView.swift */; };
@@ -51,7 +50,6 @@
 		A778CD8221F09C8400E05A4F /* RSR PechhulpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSR PechhulpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A778CD8621F09C8400E05A4F /* RSR_PechhulpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSR_PechhulpUITests.swift; sourceTree = "<group>"; };
 		A778CD8821F09C8600E05A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A778CD9421F10CDB00E05A4F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A79115C121F4ACBB0016A39F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A7CDB1C621FE35D900C9300F /* LocationInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationInformationView.xib; sourceTree = "<group>"; };
 		A7CDB1C821FE361E00C9300F /* LocationInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationView.swift; sourceTree = "<group>"; };
@@ -82,6 +80,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A74FB05922044EE900DBAF9F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A74FB05D22044FEB00DBAF9F /* Storyboards */,
+				A74FB05B22044FC000DBAF9F /* View Controllers */,
+				A74FB05C22044FDA00DBAF9F /* Custom Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A74FB05A22044F0200DBAF9F /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				A778CD6321F09C8300E05A4F /* AppDelegate.swift */,
+				A778CD6D21F09C8400E05A4F /* Assets.xcassets */,
+				A778CD6A21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		A74FB05B22044FC000DBAF9F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A79115C121F4ACBB0016A39F /* MapViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A74FB05C22044FDA00DBAF9F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDB1C621FE35D900C9300F /* LocationInformationView.xib */,
+				A7CDB1C821FE361E00C9300F /* LocationInformationView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		A74FB05D22044FEB00DBAF9F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A778CD6721F09C8300E05A4F /* Main.storyboard */,
+				A778CD6F21F09C8400E05A4F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A778CD5721F09C8300E05A4F = {
 			isa = PBXGroup;
 			children = (
@@ -105,16 +149,9 @@
 		A778CD6221F09C8300E05A4F /* RSR Pechhulp */ = {
 			isa = PBXGroup;
 			children = (
-				A778CD9421F10CDB00E05A4F /* MenuViewController.swift */,
-				A778CD6321F09C8300E05A4F /* AppDelegate.swift */,
-				A778CD6721F09C8300E05A4F /* Main.storyboard */,
-				A778CD6D21F09C8400E05A4F /* Assets.xcassets */,
-				A778CD6F21F09C8400E05A4F /* LaunchScreen.storyboard */,
 				A778CD7221F09C8400E05A4F /* Info.plist */,
-				A778CD6A21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld */,
-				A79115C121F4ACBB0016A39F /* MapViewController.swift */,
-				A7CDB1C621FE35D900C9300F /* LocationInformationView.xib */,
-				A7CDB1C821FE361E00C9300F /* LocationInformationView.swift */,
+				A74FB05A22044F0200DBAF9F /* Miscellaneous */,
+				A74FB05922044EE900DBAF9F /* UI */,
 			);
 			path = "RSR Pechhulp";
 			sourceTree = "<group>";
@@ -271,7 +308,6 @@
 			files = (
 				A778CD6C21F09C8300E05A4F /* RSR_Pechhulp.xcdatamodeld in Sources */,
 				A7CDB1C921FE361E00C9300F /* LocationInformationView.swift in Sources */,
-				A778CD9521F10CDB00E05A4F /* MenuViewController.swift in Sources */,
 				A778CD6421F09C8300E05A4F /* AppDelegate.swift in Sources */,
 				A79115C221F4ACBB0016A39F /* MapViewController.swift in Sources */,
 			);

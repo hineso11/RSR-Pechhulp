@@ -38,7 +38,7 @@
         <!--RSR Revalidatieservice-->
         <scene sceneID="EL1-gh-Q6q">
             <objects>
-                <viewController id="jfD-1g-qP3" customClass="MenuViewController" customModule="RSR_Pechhulp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jfD-1g-qP3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2fS-zf-IW2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,12 +89,60 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="gn5-Nh-4UA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Say-dS-swU">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Say-dS-swU">
                                 <rect key="frame" x="0.0" y="216" width="375" height="387"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enicccm ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">With the help of RSR we will keep you mobile. RSR is the supplier of tools in the North-East of The Netherlands. Thorough knowledge and years of experience is intertwined in our DNA and leads to the best advice. Do you want to know more about our products and services, please visit www.rsr.nl or visit our showrooms in Silvolde and Nieuwleusen. We are available every working day open from 8.00 to 17.00 hours. Here you can find a variety of tools to try out and see what goods suits your situation. Together we will look for tools that suit you. RSR makes people mobile.</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,7 +175,10 @@
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZJ-W4-Gef">
                                 <rect key="frame" x="44.5" y="494" width="286" height="54"/>
-                                <state key="normal" title="Callout" image="HazardImage" backgroundImage="MapButtonImage"/>
+                                <state key="normal" title="Callout" image="PhoneImage" backgroundImage="MapButtonImage"/>
+                                <connections>
+                                    <action selector="calloutButtonPressed:" destination="A09-fp-DBr" eventType="touchUpInside" id="nuy-RO-Bae"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,6 +206,7 @@
         <image name="HazardImage" width="42" height="36"/>
         <image name="InformationImage" width="30" height="30"/>
         <image name="MapButtonImage" width="286" height="54"/>
+        <image name="PhoneImage" width="32" height="36"/>
         <image name="VanBackground" width="153.60000610351562" height="199.67999267578125"/>
         <namedColor name="MainBlue">
             <color red="0.41176470588235292" green="0.65490196078431373" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
